@@ -1,0 +1,30 @@
+.switch-box    {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 39px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.switch-box__switcher {
+    max-width: 36px;
+    border: none;  
+    border-radius: 20px;    
+    margin: 0;  
+    padding: 2px 0 0;
+    cursor: pointer;
+}
+
+.switch-box__switcher:hover {
+    opacity: .6;
+    transition: opacity 1s linear;
+}
+
+.switch-box__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0;
+}

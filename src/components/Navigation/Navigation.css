@@ -1,0 +1,243 @@
+.navigation {
+    z-index: 9;
+    padding: 0;
+    position: relative;
+    top: -40px;
+    min-width: calc(100% - 70px * 2);
+    max-height: 74px;
+    /* justify-self: start; */
+    /* position: relative; */
+    /* left: -40px; */
+    /* top: 0px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    align-items: center;
+    min-height: calc(74px - 18px * 2);
+    margin: auto;
+    list-style: none;
+    text-align: center;    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;    
+}
+
+.navigation__mobile {
+    z-index: 51;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 28px;
+    margin-top: 112px;
+}
+
+
+.navigation__signin {
+    min-width: 76px;
+    min-height: 32px;
+    background: #2BE080;
+    border-radius: 3px;
+    justify-content: center;    
+    padding: 9px 20px;
+    text-decoration: none;    
+    color: black;
+}
+
+.navigation__signin:hover {
+    opacity: 0.6;
+    transition: opacity 1s linear;
+}
+
+.navigation__signup {
+    text-decoration: none;
+    color: white; 
+    padding-right: 30px;
+}
+
+.navigation__signup:hover {
+    opacity: 0.6;
+    transition: opacity 1s linear;
+}
+
+.navigation__movies {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
+    color: black;
+    padding-right: 16px;      
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: auto;
+}
+
+.navigation__movies:hover {
+    opacity: 0.6;
+    transition: opacity 1s linear;
+}
+
+.navigation__movies-underline {
+    border-bottom: 2px solid #000;       
+}
+
+.navigation__saved-movies {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.4;    
+    color: black;  
+      
+    /* margin-right: 30%; */
+    /* margin: auto; */
+    /* margin-right: 360px; */
+}
+
+/* .navigation__acc {
+    text-decoration: none;    
+} */
+
+.navigation__acc-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.navigation__movies_white-text{
+    color: #fff;
+}
+
+.navigation__saved-movies:hover {
+    opacity: 0.6;
+    transition: opacity 1s linear;
+}
+
+.navigation__saved-movies_mobile {    
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0;    
+}
+
+.navigation__container {
+    /* justify-self: center; */
+    padding-left: calc((100% - 945px) / 2);
+    margin: auto;
+    position: relative;    
+    left: 15px;
+}
+
+.navigation__account-btn {
+    text-decoration: none;
+    width: 105px;
+    height: 30px;
+    position: relative;    
+    left: 35px;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;    
+}
+
+.navigation__account-pict {
+    margin-left: 13px;
+    /* position: relative; */
+    /* left: 35px; */
+    /* visibility: visible; */
+}
+
+.navigation__account-btn:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 1s linear;
+}
+
+.navigation__small-screen-menu-btn {
+    margin: 0;
+    padding: 0;    
+    border: none;
+    min-width: 27px;
+    min-height: 26px;
+    background-image: url(../../images/menu-mob-button.svg);
+    /* menu-mob-button */
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    visibility: hidden;
+    margin-right: 7px;
+}
+
+.navigation__small-screen-menu-btn_whte {
+    background-image: url(../../images/menu-mob-button_whte.svg);
+}
+
+
+.navigation__akk-btn-mobile {
+    margin-top: 592px;    
+    visibility: visible;
+}
+
+.navigation__akk-btn-mobile:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 1s linear;
+}
+
+
+.navigation__small-screen-menu-btn:hover {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 1s linear;
+}
+
+@media screen and (max-width: 1279px) {
+    .navigation__small-screen-menu-btn {
+        visibility: visible;        
+    }
+    .navigation__container {
+        visibility: hidden;
+    }    
+    .navigation__account-btn {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation__small-screen-menu-btn {
+        min-width: 24px;
+        min-height: 25px;
+    }
+    .navigation {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 1.6;
+        position: relative;
+        top: -55px;       
+    }    
+    .navigation__signin {
+        min-width: 54px;
+        min-height: 26px;
+        padding: 8px 12px;
+    }
+    .navigation__signup {
+        padding-right: 15px;
+    }
+
+    .navigation__mobile {
+        row-gap: 25px;
+        margin-top: 107px;
+    }
+    .navigation__akk-btn-mobile {
+        margin-top: 418px;
+    }
+    
+}

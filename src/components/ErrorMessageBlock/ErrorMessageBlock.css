@@ -1,0 +1,14 @@
+.error {    
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FF3055;
+    z-index: 101;
+    /* visibility: hidden; */
+}

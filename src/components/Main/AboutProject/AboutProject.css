@@ -1,0 +1,191 @@
+.about-project {            
+    /* height: 608px;         */
+    display: flex;
+    padding-top: 93px;
+    padding-bottom: 100px;
+    /* padding: 110px 70px ; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;    
+}
+
+.about-project__main-title {
+    min-width: calc(100% - 70px * 2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.23;    
+    letter-spacing: -0.04em;
+    text-align: left;
+    border-bottom: 1px solid #000;    
+    padding-bottom: 26px;
+    box-sizing: border-box;
+}
+
+.about-project__container-info {
+    width: calc(100% - 70px * 2);    
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 40px;        
+    align-content: start;
+    /* justify-content: stretch;  */
+    padding-top: 30px;
+}
+
+.about-project__container-info-item {
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-items: stretch;
+}
+
+/* .about-project__container-info-item:nth-child(1) {
+    align-self: end;    
+}
+
+.about-project__container-info-item:nth-child(2) {
+    align-self: end;    
+} */
+
+.about-project__container-diagr {
+    width: calc(100% - 70px * 2);
+    height: 68px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(2, 36px);
+    justify-content: center;
+}
+
+.about-project__info-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.about-project__info-text {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;        
+    margin: 0;    
+    margin-bottom: 113px;
+}
+
+.about-project__diagr-text {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.5;
+    text-align: center;
+}
+
+.about-project__diagr-text_grey {
+    font-weight: 500;
+    line-height: 1;
+    color: #A0A0A0;
+}
+
+.about-project__container-diagr-item {
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-items: start;    
+}
+
+.about-project__container-diagr-item:nth-child(1) {
+    align-self: end;    
+    background-color: #2BE080;    
+}
+
+.about-project__container-diagr-item:nth-child(2) {
+    align-self: end;    
+    background-color: #F2F2F2;
+}
+
+@media screen and (max-width: 1279px) {
+    .about-project {
+        padding-top: 73px;
+        padding-bottom: 105px;
+    }
+    .about-project__main-title {
+        width: calc(100% - 50px * 2);  
+        margin-bottom: 15px;      
+    }
+    .about-project__info-text {
+        margin-bottom: 7px;      
+    }
+    .about-project__container-info {
+        width: calc(100% - 50px * 2);
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+
+    .about-project__container-diagr {
+        width: calc(100% - 50px * 2);
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .about-project {
+        padding-top: 40px;      
+        padding-bottom: 60px;  
+    }
+
+    .about-project__main-title {
+        min-width: calc(100% - 34px);        
+        /* padding: 18px 16px; */
+        padding-top: 15px;        
+        margin-bottom: 35px;         
+        font-size: 18px;
+        line-height: 1.22;        
+    }    
+
+    .about-project__container-info {
+        min-width: calc(100% - 34px);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;  
+        justify-items: start;      
+        align-items: start;                
+        row-gap: 54px;
+        padding-bottom: 60px;
+    }    
+
+    .about-project__info-title {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.22;
+        margin-bottom: 15px;
+    }
+
+    .about-project__info-text {
+        margin: 0;
+        padding: 0;        
+        font-size: 11px;
+        line-height: 1.45;
+    }
+    .about-project__container-diagr {
+        grid-template-columns: 100px 184px;
+        grid-template-rows: 36px 36px;
+        align-items: center;                
+    }
+    .about-project__diagr-text {
+        margin: 0;
+        padding-top: 10px;        
+        font-size: 11px;
+        line-height: 1.45;
+    }
+    
+}
